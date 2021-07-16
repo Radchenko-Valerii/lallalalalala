@@ -1,90 +1,55 @@
-// const minNumOfTwoNumbers = function(firstNum, secondNum) {
-//   if (firstNum > secondNum) {
-//     return (secondNum)
-//   }
-//   if (firstNum < secondNum) {
-//     return (firstNum)
-//   }
-//   else {
-//     return (firstNum)
-//   }
+// let n=30;
+// while(n>1){
+//   --n
+//   console.log(n%2 === 0 ? n : --n)
 // }
 
-// const result = minNumOfTwoNumbers(1, 1);
-// console.log(result);
-
-
-
-
-// const maxNumOfTwoNumbers = function(first_Num, second_Num) {
-//   if (first_Num < second_Num) {
-//     return (second_Num)
-//   }
-//   if (first_Num < second_Num) {
-//     return (first_Num)
-//   }
-//   else {
-//     return (first_Num)
-//   }
+// let password = prompt('Enter password');
+// let n=0;
+// while(n<4 && password !== 'admin'){
+//   n++
+//   password = prompt('Wrong, enter password')
+//   if(password === 'admin'){
+//     alert('Welcome')}
+//   continue;
 // }
 
-// const result = maxNumOfTwoNumbers(1, 22);
-// console.log(result);
 
-
-
-
-
-// const chetnoeChisclo = function (value1) {
-//   if ((value1 % 2)>0)  {
-//     return false;
-//   } else {
-//     return true;
-//   }
+// let factorialNum = +prompt('Enter the number');
+// let i=1;
+// let result=1;
+// if(isNaN(factorialNum)){
+//   result=null
 // }
-
-// const x = chetnoeChisclo(1);
-// console.log(x);
-
-
-// const quadUravn = function(a, b, c) {
-//   let x1; 
-//   let x2;
-//   const Discr = b*b - 4*a*c;
-//   if (Discr<0) {
-//   return NaN;
-// } else {
-//     const x1 = (-b + Math.sqrt(Discr))/(2*a)
-//   const x2 = (-b - Math.sqrt(Discr))/(2*a)
-//   return x1 + ('; '+ x2+';');
-//   }
+// if(factorialNum<0){
+//   result=null
 // }
-// const v = quadUravn(); 
-// console.log(v);
+// for (i; i <= factorialNum; ++i){
+//   result =result*i;
+// }
+// alert(result);
 
-const firstValue = +prompt('Введите число');
-const symbol = prompt('Введите знак');
-const secondValue = +prompt('Введите число');
-let result;
-switch(symbol){
-  case '+':{
-    alert(result = firstValue + secondValue);
-    break;
-  }
-  case '-':{
-    alert(result = firstValue - secondValue);
-    break;
-  }
-  case '*':{
-    alert(result = firstValue * secondValue);
-    break;
-  }
-  case '/':{
-    alert(result = firstValue / secondValue);
-    break;
-  }
-  case '^':{
-    alert(result = firstValue ** secondValue);
-    break;
+// const object = {
+//   on: function(){
+//     alert('Object on')
+//   },
+//   off: function(){
+//     alert('Object off')
+//   },
+//   value: 30
+// }
+// alert(object);
+
+function Ant (name, sizeInInch, weightInGramms, isMale, ageInMonths){
+  this.name = name,
+  this.sizeInInch = sizeInInch,
+  this.weightInGramms = weightInGramms,
+  this.isMale = isMale,
+  this.ageInMonths = ageInMonths
+  this.work = function(){
+    alert("I'm busy, i'm work!!!!")
   }
 }
+
+const Antz1 = new Ant ('Nikita', '1.02', '0.73', true, 3);
+console.log(Antz1);
